@@ -1,0 +1,15 @@
+[requires]
+asio/1.20.0
+gtest/1.11.0
+nlohmann_json/3.10.5
+openssl/1.0.2s
+
+[options]
+
+[imports]
+lib, *.so* -> lib
+bin, *.dll -> ./bin
+lib, *.dylib* -> ./bin
+
+[generators]
+cmake
